@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Mulish', sans-serif;
+}
+/* Start Background */
+.landing {
+    background-image: url(/images/image\ 1.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 60%;
+}
+/* End Background */
+
+/* Start Page One */
+.back {
+    width: 1080px;
+    height: 435px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 5px;
+    position: absolute;
+    top: 134.9px;
+    left: 220px;
+}
+.image-one {
+    margin-left: 60px;
+    border-radius: 5px;
+}
+.head-one {
+    width: 315px;
+    height: 67px;
+    font-size: 56px;
+    bottom: 38px;
+    font-family: 'Inter', sans-serif;
+    line-height: 67.2px;
+    color: #2D2D2D;
+}
+.para-one {
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    line-height: 38.4px;
+    color: #1F1249;
+}
+.button-one {
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    width: 450px;
+    height: 60px;
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #758FF0;
+    cursor: pointer;
+}
+
+@media screen and  (max-width: 480px) {
+    .landing {
+        display: none;
+    }
+    .back {
+        width: 100%;
+        height: 647px;
+        left: auto;
+        flex-direction: column;
+        top: 0;
+    }
+    .image-one {
+        width: 315px;
+        height: 315px;
+        margin: 40px 30px 0 30px;
+        position: relative;
+    }
+    .group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .head-one {
+        font-size: 42px;
+        line-height: 50.4px;
+    }
+    .para-one {
+        font-size: 16px;
+        line-height: 25.6px;
+    }
+    .span-one {
+        padding: 0 102px;
+    } 
+    .button-one {
+        width: 315px;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-width: 768px) {
+        .span-one {
+            display: none;
+        }
+    }
+    
+    @media screen and (min-width: 992px) {
+        .span-one {
+            display: none;
+        }
+    }
+    
+    @media screen and (min-width: 1280px) {
+        .span-one {
+            display: none;
+        }
+    }
+/* End Page One  */
+
+/* Start Page Two  */
+.container {
+    width: 1080px;
+    height: 656px;
+    background-color: #F5F7FFD9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    position: absolute;
+    top: 34.1px;
+    left: 220px;
+}
+.image-two {
+    padding: 60px;
+}
+.para {
+    padding: 30px 0;
+    margin-left: -60px;
+}
+.head-two {
+    font-family: 'Inter', sans-serif;
+    font-size: 42px;
+    line-height: 50.4px;
+}
+.para-two {
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    line-height: 38.4px;
+}
+.container-input {
+    display: flex;
+    justify-content: space-between;
+}
+.input-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+}
+input {
+    width: 450px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #DBE3FF;
+}
+.icon {
+    position: absolute;
+    right: 460px;
+    color: #9CADF2;
+}
+.icon::after {
+    content: "";
+    border: 0.5px solid #DBE3FF;
+    position: relative;
+    left: 8px;
+}
+input[type='text']::placeholder {
+    text-align: left;
+    padding-left: 55px;
+}
+.button-two {
+    font-family: 'Mulish', sans-serif;
+    color: #FFFFFF;
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    box-shadow: 0px 6px 18px #9cadf2;
+    width: 450px;
+    height: 60px;
+    text-align: center;
+    margin-left: 8px;
+    border-radius: 10px;
+    border: 1px solid #758FF0;
+    cursor: pointer;
+}
+@media screen and  (max-width: 480px) {
+    .landing {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        height: 931px;
+        flex-direction: column;
+        top: 0;
+        left: auto;
+    }
+    .image-two{
+        width: 84%;
+        height: 33.83%;
+        padding: 40px 30px 0 30px;
+        position: relative;
+        top: 40px;
+        left: auto;
+    }
+    .para {
+        margin: auto;
+        text-align: center;
+    }
+    .head-two {
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+    .para-two {
+        line-height: 25.6px;
+        font-size: 16px;
+        padding: 0 30px;
+    }
+    form {
+        margin: 0 auto;
+    }
+    .input-form {
+        width: 315px;
+        height: 60px;
+        margin-bottom: 12px;
+    }
+    .button-two {
+        width: 315px;
+        height: 60px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+    }
+    .icon {
+        left: 0;
+        right: 230px;
+    }
+}
+/* End Page Two  */
+
+/* Start Page Three */
+.cover {
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    background-color: #F5F7FF;
+    padding: 60px;
+    top: 72.8px;
+    margin-left: 220px;
+    width: 1080px;
+    height: 576px;
+    border-radius: 10px;
+}
+.image-three {
+    width: 450px;
+    height: 456px;
+}
+.text {
+    margin-top: 170px;
+} 
+.head-three {
+    font-family: 'Inter', sans-serif;
+    font-size: 42px;
+    line-height: 50.4px;
+}
+.para-three {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+@media screen and (max-width: 480px) {
+    .landing {
+        display: none;
+    }
+    .cover {
+        width: 100%;
+        height: 733px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        left: auto;
+        top: 0;
+    }
+    .image-three {
+        width: 322px;
+        height: 315px;
+        position: absolute;
+        top: 40px;
+    }
+    .text {
+        position: absolute;
+        bottom: 160px;
+        text-align: center;
+        margin-bottom: -30px;
+    }
+    .head-three {
+        font-size: 32px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .para-three {
+        font-size: 16px;
+        line-height: 25.6px;
+    }
+}
+/* End Page Three  */
